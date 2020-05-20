@@ -8,3 +8,13 @@
     url("../font/Roboto.woff2") format("woff2"),
     url("../font/Roboto.woff") format("woff");
 }
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src:
+    local("Roboto Light"),
+    url("../font/Robotolight.woff2") format("woff2"),
+    url("../font/Robotolight.woff") format("woff");
+}
