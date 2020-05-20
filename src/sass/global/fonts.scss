@@ -18,3 +18,14 @@
     url("../font/Robotolight.woff2") format("woff2"),
     url("../font/Robotolight.woff") format("woff");
 }
+
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src:
+    local("Raleway medium"),
+    url("../font/Ralewaymedium.woff2") format("woff2"),
+    url("../font/Ralewaymedium.woff") format("woff");
+}
