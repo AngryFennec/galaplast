@@ -1,0 +1,136 @@
+.contacts__title {
+  font-size: 48px;
+  font-weight: normal; 
+} //надо вынести в стили header
+
+.contacts-wrapper {
+  display: block;
+}
+
+.list-contacts__wrapper {
+  display: inline;
+  max-width: 262px;
+  float: left;
+
+}
+
+.list-contacts__address-title {
+  color: #000000;
+  font-size: 30px;
+  font-weight: 100;
+  line-height: 120%;
+}
+
+.list-contacts__directions-title {
+  color: $light-red;
+  font-weight: 100;
+  font-size: 16px;
+  max-width: 114px;
+  border-bottom: 1px dashed $light-red;
+}
+
+.list-contacts__phone-title {
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 8px;
+}
+
+.list-contacts__phone-time {
+  color: $light-red;
+  font-weight: 100;
+  font-size: 16px;
+}
+
+.list-contacts__social-networks-wrapper {
+  display: inline;
+}
+
+.list-contacts__callback {
+  display: block;
+  background-color: inherit;
+  color: $light-red;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 18px 25px; 
+  border: 2px solid $light-red;
+  border-radius: 200px;
+}
+
+.contacts__map-wrapper {
+  display:inline;
+  max-width: 480px;
+  max-height: 480px;
+  border-radius: 200px;
+}
+ 
+.iframe_map {
+  border-radius: 240px;
+  -webkit-border-radius: 240px;
+  -o-border-radius: 240px;
+  //border: 2px solid $light-red; //лучше добавить
+}
+
+.route__title {
+  font-size: 36px;
+  font-weight: normal;
+}
+
+.route__wrapper {
+}
+
+.route__circle {
+  width: 18px;
+  height: 18px;
+  border-radius: 18px;
+  background: $light-red;
+  display:inline-block;
+}
+
+.route__place-title {
+  font-weight: normal;
+  max-width:none;
+  font-size: 16px;
+  display:inline-block;
+}
+
+.route__line {
+  size: 1px;
+  width: 100px;
+  color: $light-red;
+  display:inline-block;
+}
+
+.route__distance-wrapper {
+  vertical-align: center;
+}
+
+.route__distance {
+  display:inline-block;
+  margin-left: 10px;
+}
+
+.route__distance-value {
+  color: $light-red;
+  size: 30px;
+}
+
+.route__distance-key {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.route__distance-list {
+  display:inline-block;
+}
+
+.route__download-scheme {
+  display:inline-block;
+  background-color: inherit;
+  color: $light-red;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 18px 25px; 
+  border: 2px solid $light-red;
+  border-radius: 200px;
+} //дублирование 
+
