@@ -41,7 +41,6 @@
     url("../font/Ralewaymedium.woff") format("woff");
 }
 
-//скачать италик
 @font-face {
   font-family: "Raleway";
   font-style: italic;
@@ -51,4 +50,26 @@
     local("Raleway italic"),
     url("../font/Raleway-Italic.woff2") format("woff2"),
     url("../font/Raleway-Italic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src:
+    local("Raleway bold"),
+    url("../font/Ralewaybold.woff2") format("woff2"),
+    url("../font/Ralewaybold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src:
+    local("Raleway regular"),
+    url("../font/Ralewayregular.woff2") format("woff2"),
+    url("../font/Ralewayregular.woff") format("woff");
 }
