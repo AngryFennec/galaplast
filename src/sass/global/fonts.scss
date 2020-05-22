@@ -8,6 +8,17 @@
     url("../font/Roboto.woff2") format("woff2"),
     url("../font/Roboto.woff") format("woff");
 }
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src:
+    local("Roboto"),
+    url("../font/Robotomedium.woff2") format("woff2"),
+    url("../font/Robotomedium.woff") format("woff");
+}
 @font-face {
   font-family: "Roboto";
   font-style: normal;
@@ -28,6 +39,17 @@
     local("Raleway medium"),
     url("../font/Ralewaymedium.woff2") format("woff2"),
     url("../font/Ralewaymedium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src:
+    local("Raleway italic"),
+    url("../font/Raleway-Italic.woff2") format("woff2"),
+    url("../font/Raleway-Italic.woff") format("woff");
 }
 
 @font-face {
