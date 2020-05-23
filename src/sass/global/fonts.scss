@@ -73,3 +73,14 @@
     url("../font/Ralewayregular.woff2") format("woff2"),
     url("../font/Ralewayregular.woff") format("woff");
 }
+
+@font-face {
+  font-family: "Lora";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src:
+    local("Lora Bold"),
+    // url("../font/Ralewayregular.woff2") format("woff2"),
+    url("../font/Lora-BoldItalic.woff") format("woff");
+}
