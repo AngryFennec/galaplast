@@ -1,6 +1,7 @@
 .header {
     width: 100%;
     position: relative;
+    padding-bottom: 5px;
 
     & .wrapper {
         display: flex;
@@ -25,7 +26,7 @@
         font-size: 16px;
         line-height: 19px;
         color: #8E8E8E;
-        padding: 12px 0;
+        padding: 12px 20px;
         border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
         & a {
@@ -50,6 +51,7 @@
     }
 
     &__bottom {
+        padding: 0 20px;
         & a {
             text-decoration: none;
             display: flex;
@@ -67,7 +69,6 @@
         }
 
         & nav {
-            padding-top: 7px;
             margin-left: auto;
             display: flex;
             align-items: center;
@@ -86,7 +87,6 @@
             }
 
             & .js-popup {
-                padding-top: 5px;
                 font-weight: 500;
                 color: #121212;
                 border-bottom: 1px dashed rgba(224, 101, 101, 0.8);

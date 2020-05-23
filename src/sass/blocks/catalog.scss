@@ -1,0 +1,66 @@
+.catalog {
+    padding: 20px;
+    background: url('../img/catalog-back.png') no-repeat 0 100%;
+    background-size: 100% auto;
+    & .wrapper {
+        max-width: 1140px;
+    }
+
+    & h2 {
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 42px;
+        color: #000000;
+        margin-top: 40px;
+        margin-bottom: 28px;
+    }
+
+    & .swiper-container {
+        padding-top: 60px;
+        margin-top: -60px;
+        padding-bottom: 70px;
+    }
+
+    & .swiper-button-prev, .swiper-button-next {
+        width: 45px;
+        height: 45px;
+        border: 2px solid #E06565;
+        box-sizing: border-box;
+        border-radius: 50%;
+        top: 22px;
+        right: 34px;
+        left: auto;
+
+        &::after {
+            font-size: 20px;
+            font-weight: 900;
+            line-height: 20px;
+            color: #E06565;
+        }
+    
+        &:hover {
+            border-color: #E06565;
+            background: #E06565;
+    
+            &::after {
+                color: white;
+            }
+        }
+    }
+
+    & .swiper-button-prev {
+        right: 100px;
+    }
+
+    & .swiper-scrollbar-drag {
+        height: 23px;
+        background: url('../img/drag.png') no-repeat 0 0;
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.05);
+        border-radius: 5px;
+        top: -9px;
+    }
+
+    & .swiper-container-horizontal > .swiper-scrollbar {
+        bottom: 30px;
+    }
+}
