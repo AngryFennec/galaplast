@@ -1,3 +1,6 @@
-<svg width="26" height="20" viewBox="0 0 26 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M26 11.375V8.125H0V11.375H26ZM0 0V3.25H19.25V0H0ZM0 16.25V19.5H19.25V16.25H0Z" fill="black"/>
+<svg width="28" height="16" viewBox="0 0 28 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="28" height="2" rx="1" fill="black"/>
+<rect y="7" width="28" height="2" rx="1" fill="black"/>
+<rect y="14" width="28" height="2" rx="1" fill="black"/>
 </svg>
+

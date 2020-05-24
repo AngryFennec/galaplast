@@ -1,5 +1,7 @@
 .about {
     width: 100%;
+    margin-bottom: 67px;
+    padding: 0 20px;
 
     & .wrapper {
         display: flex;
@@ -17,18 +19,131 @@
         font-weight: 300;
         font-size: 16px;
         line-height: 24px;
+        max-width: 455px;
+        width: 100%;
 
         & blockquote {
             font-style: italic;
             font-weight: 500;
             font-size: 16px;
             line-height: 24px;
+            margin-left: 0;
+            padding-left: 30px;
+            position: relative;
+
+            &::before {
+                position: absolute;
+                content: "";
+                width: 16px;
+                height: 18px;
+                left: 0;
+                top: 0;
+                background: url('../img/black.png') no-repeat center center;
+            }
+        }
+
+        & p {
+            max-width: 380px;
+            margin-bottom: 0;
         }
     }
 
     &__image-block {
         position: absolute;
-        top: 0;
+        top: 30px;
         left: 50%;
+        transform: translateX(-48%);
     }
+
+    &__slider {
+        width: 100%;
+        max-width: 450px;
+        background: #FFFFFF;
+        box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.07);
+        border-radius: 15px;
+        position: relative;
+        z-index: 1;
+        margin-left: auto;
+        margin-top: 37px;
+        padding: 53px;
+
+        & h3 {
+            font-size: 36px;
+            line-height: 42px;
+            color: #000000;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        & p {
+            margin-top: 13px;
+            font-size: 16px;
+            line-height: 22px;
+            color: #000000;
+        }
+    }
+
+    & .swiper-container {
+        padding-bottom: 55px;
+    }
+
+    & .swiper-pagination {
+        text-align: left;
+        bottom: 5px;
+    }
+
+    & .swiper-pagination-bullet {
+        width: 18px;
+        height: 5px;
+        border-radius: 5px;
+    }
+
+    & .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 0 10px 0 0;
+    }
+
+    & .swiper-pagination-bullet-active {
+        background: #E06565;
+    }
+
+    & .swiper-button-prev, .swiper-button-next {
+        top: 97%;
+        width: 30px;
+        height: 30px;
+        background: linear-gradient(152.53deg, #E06565 16.78%, #A52323 90.1%);
+        border-radius: 50%;
+
+        &::after {
+            display: none;
+        }
+    }
+
+    & .swiper-button-prev {
+        left: calc(100% - 70px);
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            top: 0;
+            left: 0;
+            background: url('../img/slider-arrow.svg') no-repeat center center;
+        }
+    }
+    & .swiper-button-next {
+        right: 0;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            top: 0;
+            left: 0;
+            background: url('../img/slider-arrow.svg') no-repeat center center;
+            transform: rotate(-180deg);
+        }
+
+    }
+
 }

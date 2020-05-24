@@ -1,6 +1,6 @@
 .categories {
     width: 100%;
-    padding: 0 20px;
+    padding: 0 20px 17px 20px;
 
     & h2 {
         font-weight: bold;
@@ -17,10 +17,10 @@
         padding: 0;
 
         & li {
-            width: 31%;
-            max-width: 369px;
-            margin-right: 3.5%;
-            margin-bottom: 30px;
+            width: 32%;
+            max-width: 380px;
+            margin-right: 2.5%;
+            margin-bottom: 35px;
 
             &:nth-child(3n) {
                 margin-right: 0;
@@ -50,7 +50,7 @@
                     font-size: 30px;
                     line-height: 35px;
                     color: #000000;
-                    min-height: 95px;
+                    min-height: 98px;
                 }
 
                 &:hover {
