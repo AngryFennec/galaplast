@@ -117,6 +117,14 @@
                 font-size: 13px;
                 font-family: $font;
             }
+
+            & svg {
+                width: 27px;
+                height: auto;
+                & path {
+                    stroke: black;
+                }
+            }
         }
     }
 
@@ -128,6 +136,7 @@
         top: 40px;
         right: 30px;
         position: absolute;
+        z-index: 4;
     }
 }
 
@@ -151,20 +160,30 @@
 
 @media(max-width: 1024px) {
     .header__top {
+        display: none;
         position: absolute;
         right: 30px;
         top: 30px;
-        width: 235px;
+        width: 230px;
         z-index: 6;
         border-bottom: none;
 
         & p {
-            
+            margin-top: 5px;
+            font-size: 12px;
+            line-height: 14px;
+            color: #8E8E8E;
         }
 
         & .wrapper {
             display: block;
 
+        }
+
+        & ul {
+            position: absolute;
+            top: 305px;
+            left: 5px;
         }
        
     }
@@ -181,7 +200,7 @@
     }
 
     .header__bottom nav{
-        display: block;
+        display: none;
         position: absolute;
         z-index: 3;
         top: 0;
@@ -216,8 +235,9 @@
     }
 
     .header .header__cart {
-        position: absolute;
-        top: calc(100vh - 112px);
+        position: fixed;
+        z-index: 2;
+        bottom: 40px;
         right: 20px;
         width: 76px;
         height: 76px;
@@ -255,13 +275,17 @@
 @media(max-width: 500px) {
     .header {
         &__bottom {
-
             & .header__logo {
+                margin-top: 15px;
                 & span {
                     margin-left: 27;
                     font-size: 10px;
                 }
             }
+        }
+
+        & .header__burger {
+            top: 25px;
         }
     }
 }

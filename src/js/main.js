@@ -4,3 +4,5 @@
  */
 
  //= modules/about.js
+ //= modules/menu.js
+  //= modules/catalog.js
