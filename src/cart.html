@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Galaplast</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="page-body">
+  <header class="header">
+      <div class="header__top">
+        <div class="wrapper">
+          <a href="tel:84912521100">+7 (4912) 521-100</a>
+          <p>Пн-Пт: 09:00 - 18:00</p>
+          <ul>
+            <li>
+              <a href="#">
+              <img src="img/instagram.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/instagram.png" alt="">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/instagram.png" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <div class="wrapper">
+          <a href="#">
+            <img src="img/logo.svg" alt="логотип">
+            <span> Магазин офисных кресел</span>
+          </a>
+          <nav>
+            <ul>
+              <li class="header__active">
+                <a href="#">Каталог товаров</a>
+              </li>
+              <li>
+                <a href="#">Доставка и оплата</a>
+              </li>
+              <li>
+                <a href="#">Гарантии</a>
+              </li>
+              <li>
+                <a href="#">Контакты</a>
+              </li>
+              <li>
+                <a class="js-popup" href="#">Обратный звонок</a>
+              </li>
+            </ul>
+          </nav>
+          <a class="header__cart" href="#">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4.87086 7.61483L7.23299 4.41817C7.66021 3.8395 8.32477 3.5 9.03002 3.5H18.0943C18.7995 3.5 19.4641 3.8395 19.8913 4.41817L22.2535 7.61483C22.5541 8.02083 22.7168 8.519 22.7168 9.03V22.1667C22.7168 23.4558 21.7053 24.5 20.4564 24.5H6.66789C5.41901 24.5 4.40747 23.4558 4.40747 22.1667V9.03C4.40747 8.519 4.57022 8.022 4.87086 7.61483V7.61483Z" stroke="#0D0D0D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M18.0839 11.6666C18.0839 14.2438 16.0597 16.3333 13.5631 16.3333C11.0664 16.3333 9.04224 14.2438 9.04224 11.6666" stroke="#0D0D0D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M4.54248 8.24829H22.5806" stroke="#0D0D0D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span>2</span>
+          </a>
+        </div>
+      </div>
+      <button class="header__burger" type="button"><img src="img/burger.svg" alt="иконка меню"></button>
+  </header>
+  <main>
+    <div class="breadcrumbs block">
+      <ul>
+        <li>
+          <a href="#">Главная</a>
+        </li>
+        <li>
+          <span>Корзина</span>
+        </li>
+      </ul>
+    </div>
+
+    <section class="cart block">
+      <h1 class="cart__title">Корзина</h1>
+      <div class="cart__wrap">
+        <div class="cart__content">
+          <ul class="cart__list">
+            <li class="cart__item cart-item">
+              <div class="cart-item__img-wrap">
+                <img src="img/cart-1.png" alt="Гардиан стул" width="38" height="61">
+              </div>
+              <div class="cart-item__content">
+                <div class="cart-item__head">
+                  <h2>Гардиан стул</h2>
+                  <div class="cart-item__count">
+                    <button type="button" class="cart-item__btn cart-item__btn--minus" aria-label="минус">
+                      <svg width="7" height="1" viewBox="0 0 7 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 1V0H7V1H0Z" fill="#A4A4A4"/>
+                      </svg>
+                    </button>
+                    <input type="text" value="1" name="count-product">
+                    <button type="button" class="cart-item__btn cart-item__btn--plus" aria-label="плюс">
+                      <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 2.89877V4.10123H4.209V7H2.791V4.10123H0V2.89877H2.791V0H4.209V2.89877H7Z" fill="#A4A4A4"/>
+                      </svg>
+                    </button>
+                  </div>
+                  <span class="cart-item__price">2631 ₽</span>
+                </div>
+                <div class="cart-item__options">
+                  <p><span class="cart-item__category">Цвет:</span> <span class="cart-item__color" style="background-color: #8b44ff;"></span></p>
+                  <p><span class="cart-item__category">Опции:</span> <b>Хромированные ручки,</b> <b>Отделка сиденья кожей,</b> <b>Пластик очень длинный доп. в две строки</b></p>
+                </div>
+              </div>
+              <button type="button" class="cart-item__remove-btn" aria-label="удалить">
+                <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.6765 9.11765L10.0294 9.70588L5.5 5.58823L0.647058 10L0 9.41177L4.85294 5L0.32353 0.882353L0.970588 0.294118L5.5 4.41177L10.3529 0L11 0.588235L6.14706 5L10.6765 9.11765Z" fill="#8F8F8F"/>
+                </svg>
+                <span>удалить</span>
+              </button>
+            </li>
+            <li class="cart__item cart-item">
+              <div class="cart-item__img-wrap">
+                <img src="img/cart-2.png" alt="Гардиан стул" width="42" height="67">
+              </div>
+              <div class="cart-item__content">
+                <div class="cart-item__head">
+                  <h2>Сапфир</h2>
+                  <div class="cart-item__count">
+                    <button type="button" class="cart-item__btn cart-item__btn--minus" aria-label="минус">
+                      <svg width="7" height="1" viewBox="0 0 7 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 1V0H7V1H0Z" fill="#A4A4A4"/>
+                      </svg>
+                    </button>
+                    <input type="text" value="3" name="count-product">
+                    <button type="button" class="cart-item__btn cart-item__btn--plus" aria-label="плюс">
+                      <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 2.89877V4.10123H4.209V7H2.791V4.10123H0V2.89877H2.791V0H4.209V2.89877H7Z" fill="#A4A4A4"/>
+                      </svg>
+                    </button>
+                  </div>
+                  <span class="cart-item__price">2631 ₽</span>
+                </div>
+                <div class="cart-item__options">
+                  <p><span class="cart-item__category">Цвет:</span> <span class="cart-item__color" style="background-color: #2adda1;"></span></p>
+                  <p><span class="cart-item__category">Опции:</span> <b>Хромированные ручки</b>, <b>Отделка сиденья кожей</b>, <b>Пластик очень длинный доп. в две строки</b></p>
+                </div>
+              </div>
+              <button type="button" class="cart-item__remove-btn" aria-label="удалить">
+                <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.6765 9.11765L10.0294 9.70588L5.5 5.58823L0.647058 10L0 9.41177L4.85294 5L0.32353 0.882353L0.970588 0.294118L5.5 4.41177L10.3529 0L11 0.588235L6.14706 5L10.6765 9.11765Z" fill="#8F8F8F"/>
+                </svg>
+                <span>удалить</span>
+              </button>
+            </li>
+          </ul>
+          <form class="cart-form">
+            <div class="cart-form__item">
+              <h2 class="cart-form__label">Доставка</h2>
+              <p class="cart-form__desc">Бесплатная доставка до ближайшего к вам пункта выдачи</p>
+              <div class="cart-form__wrap">
+                <div class="cart-form__radio">
+                  <input type="radio" name="delivery" id="delivery-1" class="visually-hidden">
+                  <label for="delivery-1">Байкал Сервис</label>
+                </div>
+                <div class="cart-form__radio">
+                  <input type="radio" name="delivery" id="delivery-2" class="visually-hidden" checked>
+                  <label for="delivery-2">СДЭК</label>
+                </div>
+              </div>
+            </div>
+            <div class="cart-form__item">
+              <h2 class="cart-form__label">Ваши данные</h2>
+              <div class="cart-form__input">
+                <input type="text" name="cart-name" id="cart-name" placeholder="ФИО">
+                <label for="cart-name" class="visually-hidden">Ваше имя</label>
+              </div>
+              <div class="cart-form__input">
+                <input type="text" name="cart-address" id="cart-address" placeholder="Адрес">
+                <label for="cart-address" class="visually-hidden">Ваш адрес</label>
+              </div>
+              <div class="cart-form__row">
+                <div class="cart-form__input cart-form__input--min">
+                  <input type="tel" name="cart-tel" id="cart-tel" placeholder="Номер телефона">
+                  <label for="cart-tel" class="visually-hidden">Ваш номер телефон</label>
+                </div>
+                <div class="cart-form__input cart-form__input--min">
+                  <input type="email" name="cart-email" id="cart-email" placeholder="Электронная почта">
+                  <label for="cart-email" class="visually-hidden">Ваша электронная почта</label>
+                </div>
+              </div>
+              <div class="cart-form__checkbox">
+                <input type="checkbox" name="cart-consent" id="cart-consent" class="visually-hidden" checked>
+                <label for="cart-consent"><span>Отправляя обращение, вы даёте согласие на обработку <a href="#">персональных данных</a></span></label>
+              </div>
+              <button type="submit" class="cart-form__button button-gradient">Подтвердить</button>
+            </div>
+          </form>
+        </div>
+        <div class="cart__result">
+          <div class="cart-result">
+            <p class="cart-result__row cart-result__row--accent">
+              <span class="cart-result__name">Итого:</span>
+              <span class="cart-result__value">62 412 ₽</span>
+            </p>
+            <p class="cart-result__row">
+              <span class="cart-result__name">Гардиан стул</span>
+              <span class="cart-result__value">15 000 ₽</span>
+            </p>
+            <p class="cart-result__row">
+              <span class="cart-result__name">Супер сапфир стул</span>
+              <span class="cart-result__value">42 000 ₽</span>
+            </p>
+            <p class="cart-result__row">
+              <span class="cart-result__name">Супер сапфир стул</span>
+              <span class="cart-result__value">3 263 ₽</span>
+            </p>
+            <a href="#" class="cart-result__button button-gradient">Оплатить </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer block">
+
+    <div class="footer__wrapper wrapper">
+      <div class="footer__contacts">
+        <p>Пн-Пт: 09:00 - 18:00</p>
+        <a href="tel:+74912521100">+7 (4912) 521-100</a>
+      </div>
+      <div class="footer__menu">
+        <ul>
+          <li><a class="active" href="#">Каталог товара</a></li>
+          <li><a href="#">Доставка и оплата</a></li>
+          <li><a href="#">Гарантии</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="footer__developer">
+        <p>Разработка сайта:</p>
+        <a href="https://s-pushkin.ru/">Стартап-студия Pushkin</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
