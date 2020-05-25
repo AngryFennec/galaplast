@@ -338,7 +338,24 @@
       </div>
     </div>
   </footer> 
-
+  <section class="popup" style="display:none">
+    <div class="popup__block ">
+      <h2 class="popup__header">Обрaтный звонок</h2>
+      <form class="popup__form" action="#" method="post">
+        <div class="popup__fields-wrapper">
+          <label class="visually-hidden" for="user-name">Ваше имя</label>
+          <input type="text" id="user-name" name="user-name" placeholder="Как к вам обращаться?" required>
+          <label class="visually-hidden" for="user-phone" >Ваш телефон</label>
+          <input type="text" id="user-phone" name="user-phone" placeholder="Ваш телефон" required>
+          <label class="visually-hidden" for="user-email" >Ваш email</label>
+        </div>
+        <input class="visually-hidden" type="checkbox" id="agree" name="agree" required>
+        <label class="popup__caption" for="agree">Отправляя обращение, вы даёте согласие на обработку <a href="#">персональных данных.</a></label>
+        <button class="popup__btn button button-gradient"><span>Отправить</span></button>
+      </form>
+      <button type="button" class="popup__close"><img src="img/close-icon.svg" alt="close"></button>
+    </div>
+  </section>
   <script src="js/vendor.js"></script>
   <script src="js/main.js"></script>
 

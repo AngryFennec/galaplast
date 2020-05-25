@@ -2,8 +2,38 @@
     padding: 20px;
     background: url('../img/catalog-back.png') no-repeat 0 100%;
     background-size: 100% auto;
+
+    &--nobackground {
+        background: none;
+    }
     & .wrapper {
         max-width: 1140px;
+    }
+
+    &--nobackground {
+        & .wrapper {
+            max-width: 1200px;
+        }
+    }
+
+    & ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+
+        & li {
+            width: 33.33%;
+            padding-right: 30px;
+            max-width: 380px;
+            margin-bottom: 38px;
+
+            &:nth-child(3n){
+                padding-right: 0;
+            }
+        }
     }
 
     & h2 {
