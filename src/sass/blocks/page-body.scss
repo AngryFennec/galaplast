@@ -7,7 +7,9 @@
   font-family: $font;
   background: #FCFCFC;
   width: 100%;
-
+ &--overflow {
+   overflow: hidden;
+ }
 }
 
 

@@ -38,7 +38,7 @@
       </div>
       <div class="header__bottom">
         <div class="wrapper">
-          <a href="#">
+          <a class="header__logo" href="#">
             <img src="img/logo.svg" alt="логотип">
             <span> Магазин офисных кресел</span>
           </a>
@@ -63,18 +63,18 @@
           </nav>
           <a class="header__cart" href="#">
             <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M4.87086 7.61483L7.23299 4.41817C7.66021 3.8395 8.32477 3.5 9.03002 3.5H18.0943C18.7995 3.5 19.4641 3.8395 19.8913 4.41817L22.2535 7.61483C22.5541 8.02083 22.7168 8.519 22.7168 9.03V22.1667C22.7168 23.4558 21.7053 24.5 20.4564 24.5H6.66789C5.41901 24.5 4.40747 23.4558 4.40747 22.1667V9.03C4.40747 8.519 4.57022 8.022 4.87086 7.61483V7.61483Z" stroke="#0D0D0D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M18.0839 11.6666C18.0839 14.2438 16.0597 16.3333 13.5631 16.3333C11.0664 16.3333 9.04224 14.2438 9.04224 11.6666" stroke="#0D0D0D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M4.54248 8.24829H22.5806" stroke="#0D0D0D" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M4.87086 7.61483L7.23299 4.41817C7.66021 3.8395 8.32477 3.5 9.03002 3.5H18.0943C18.7995 3.5 19.4641 3.8395 19.8913 4.41817L22.2535 7.61483C22.5541 8.02083 22.7168 8.519 22.7168 9.03V22.1667C22.7168 23.4558 21.7053 24.5 20.4564 24.5H6.66789C5.41901 24.5 4.40747 23.4558 4.40747 22.1667V9.03C4.40747 8.519 4.57022 8.022 4.87086 7.61483V7.61483Z"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M18.0839 11.6666C18.0839 14.2438 16.0597 16.3333 13.5631 16.3333C11.0664 16.3333 9.04224 14.2438 9.04224 11.6666"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M4.54248 8.24829H22.5806"  stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
             <span>2</span>
           </a>
         </div>
       </div>
-      <button class="header__burger" type="button"><img src="img/burger.svg" alt="иконка меню"></button>
+      <button class="header__burger" type="button"><img src="img/burger.svg" alt="иконка меню"><img class="none" src="img/close-burger.svg" alt="иконка меню"></button>
   </header>
   <main>
-    <section class="banner">
+<section class="banner">
       <a href="#">
         <div class="banner__block">
           <p>Осенние скидки, для студентов!</p>
@@ -223,10 +223,23 @@
             <div class="about__wrapper swiper-wrapper">
               <div class="about__item swiper-slide">
                 <img src="img/about-slider-1.svg" alt="иконка">
-                <h3>Доставляем по всей стране!</h3>
+                <h3>Доставляем<br> по всей стране!</h3>
+                <p>Мы не хватаем звезд с неба, мы ведем свой бизнес честно и умело. занимая свою нишу, мы предлаегаем ключевые в ней приемущества в этой благосфере.</p>
+              </div>
+              <div class="about__item swiper-slide">
+                <img src="img/about-slider-1.svg" alt="иконка">
+                <h3>Доставляем<br> по всей стране!</h3>
+                <p>Мы не хватаем звезд с неба, мы ведем свой бизнес честно и умело. занимая свою нишу, мы предлаегаем ключевые в ней приемущества в этой благосфере.</p>
+              </div>
+              <div class="about__item swiper-slide">
+                <img src="img/about-slider-1.svg" alt="иконка">
+                <h3>Доставляем<br> по всей стране!</h3>
                 <p>Мы не хватаем звезд с неба, мы ведем свой бизнес честно и умело. занимая свою нишу, мы предлаегаем ключевые в ней приемущества в этой благосфере.</p>
               </div>
             </div>
+            <div class="about__pagination swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
           </div>
         </div>
       </div>
@@ -286,27 +299,26 @@
         </ul>
       </div>
     </section>
-  <section class="call block">
-    <div class="call__wrapper wrapper">
-      <h2 class="call__title">
-        Мы рады помочь вам как можно скорее.
-      </h2>
-      <p>Заполните форму ниже и мы свяжемся с вами в ближайшее время</p>
-      <form class="call__form">
-        <label class="visually-hidden" for="call-name"></label>
-        <input class="call__input" id="#call-name" name="call-name" type="text" placeholder="Дмитрий">
-        <label class="visually-hidden" for="call-phone"></label>
-        <input class="call__input" id="#call-phone" name="call-phone" type="phone" placeholder="Номер телефона">
-        <div class="call__send">
-          <a class="call__btn" href="#">Отправить</a>
-          <p>Отправляя обращение, вы даёте согласие на обработку <a href="#" class="call__personal">персональных данных</a>
-        </div>
-      </form>
-    </div>
-  </section>
+    <!-- <section class="call block">
+      <div class="call__wrapper wrapper">
+        <h2 class="call__title">
+          Мы рады помочь вам как можно скорее.
+        </h2>
+        <p>Заполните форму ниже и мы свяжемся с вами в ближайшее время</p>
+        <form class="call__form">
+          <label class="visually-hidden" for="call-name"></label>
+          <input class="call__input" id="#call-name" name="call-name" type="text" placeholder="Дмитрий">
+          <label class="visually-hidden" for="call-phone"></label>
+          <input class="call__input" id="#call-phone" name="call-phone" type="phone" placeholder="Номер телефона">
+          <div class="call__send">
+            <a class="call__btn" href="#">Отправить</a>
+            <p>Отправляя обращение, вы даёте согласие на обработку <a href="#" class="call__personal">персональных данных</a>
+          </div>
+        </form>
+      </div>
+    </section> -->
   </main>
-  <footer class="footer block">
-
+ <footer class="footer block">
     <div class="footer__wrapper wrapper">
       <div class="footer__contacts">
         <p>Пн-Пт: 09:00 - 18:00</p>
@@ -325,25 +337,10 @@
         <a href="https://s-pushkin.ru/">Стартап-студия Pushkin</a>
       </div>
     </div>
-  </footer>
+  </footer> 
 
   <script src="js/vendor.js"></script>
   <script src="js/main.js"></script>
-  <script>
-    let hitsSlider = new Swiper('.catalog__slider', {
-      slidesPerView: 3,
-      spaceBetween: 30,
-      scrollbar: {
-          el: '.swiper-scrollbar',
-          hide: false,
-          draggable: true,
-          dragSize: 84
-        },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    })
-  </script>
+
 </body>
 </html>

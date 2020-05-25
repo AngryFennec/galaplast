@@ -101,3 +101,28 @@
         }
     }
 }
+
+@media(max-width: 767px) {
+    .item {
+        &__title-block {
+            margin: 0 15px;
+            & h3 {
+                font-size: 24px;
+                line-height: 150%;
+            }
+        }
+
+        &__price-block {
+            padding: 20px 15px;
+
+            & span {
+                font-size: 30px;
+
+                & img {
+                    width: 19px;
+                    height: auto;
+                }
+            }
+        }
+    }
+}

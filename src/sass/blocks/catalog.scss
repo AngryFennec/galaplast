@@ -63,4 +63,38 @@
     & .swiper-container-horizontal > .swiper-scrollbar {
         bottom: 30px;
     }
+
+    & .swiper-slide {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media(max-width: 767px) {
+    .catalog {
+        background: none;
+        & h2 {
+            font-size: 26px;
+            line-height: 150%;
+        }
+
+        & .swiper-button-prev, .swiper-button-next {
+            width: 30px;
+            height: 30px;
+            border: 2px solid #E06565;
+            box-sizing: border-box;
+            border-radius: 50%;
+            top: 22px;
+            right: 34px;
+            left: auto;
+    
+            &::after {
+                font-size: 10px;
+            }
+        }
+
+        & .swiper-button-prev {
+            right: 75px;
+        }
+    }
 }
