@@ -219,6 +219,7 @@
             font-size: 48px;
             line-height: 56px;
             color: #E06565;
+
              & img {
                  margin-left: 20px;
                  margin-right: 5px;
@@ -329,6 +330,11 @@
 
 @media(max-width: 1024px) {
     .card {
+
+        & h1 {
+            font-size: 35px;
+            line-height: 150%;
+        }
         &__left {
             width: 100%;
 
@@ -336,12 +342,18 @@
                 & img {
                     margin: 0 auto;
                     max-width: 300px;
+                    width: 70%;
+
                 }
             }
 
             & p {
                 max-width: 100%;
             }
+        }
+
+        &__gallary{
+            margin-right: 0;
         }
 
         &__right {
