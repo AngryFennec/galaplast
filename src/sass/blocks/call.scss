@@ -7,6 +7,7 @@
   padding-right: 55px;
 }
 
+
 .call {
   font-family: $second-font;
   margin-bottom: 45px;
@@ -133,4 +134,41 @@ color: #FFFFFF;
 &:focus {
   outline: none;
 }
+}
+
+@media (max-width: 1200px) {
+  .call__wrapper {
+    background-position: 40% 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .call__wrapper {
+      background: linear-gradient(105.14deg, #DF6464 0%, #BF4040 100.92%);
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 20px;
+  }
+
+  .call__form {
+    flex-direction: column;
+  }
+
+  .call__input {
+    margin: 0;
+    width: 100%;
+    margin-bottom: 20px;
+    max-width: 300px;
+  }
+
+  .call__btn {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .call h2 {
+    font-size: 30px;
+    line-height: 120%;
+    max-width: 100%;
+  }
 }
