@@ -18,7 +18,29 @@
     & a {
         &:hover {
             opacity: 0.8;
+
+            & .header__vk {
+                fill: #E06565;
+            }
+            & .header__insta {
+                fill: #E06565;
+            }
+            & .header__fb {
+                fill: #E06565;
+            }
         }
+    }
+
+    &__vk {
+        fill: #c4c4c4;
+    }
+
+    &__insta {
+        fill: #c4c4c4;
+    }
+
+    &__fb {
+        fill: #c4c4c4;
     }
 
     &__top {
