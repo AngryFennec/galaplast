@@ -25,3 +25,7 @@ $('.popup').on('click', function (evt) {
     $('.page-body').removeClass('page-body--overflow');
   }
 });
+
+const input = $('input[name="user-phone"]')[0];
+let im = new Inputmask("+7 (999) 999-99-99");
+if(input)im.mask(input);

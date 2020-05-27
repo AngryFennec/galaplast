@@ -101,25 +101,24 @@
               </div>
               <div class="card__left">
                 <div class="card__image-block">
-                    
                     <ul class="card__gallary">
                       <li>
-                        <a href="#" data-fancybox="gallery">
+                        <a href="img/product.png" data-fancybox="gallery">
                           <img src="img/product-gallery.png" alt="gallary">
                         </a>
                       </li>
                       <li>
-                        <a href="#" data-fancybox="gallery">
+                        <a href="img/product.png" data-fancybox="gallery">
                           <img src="img/product-gallery.png" alt="gallary">
                         </a>
                       </li>
                       <li>
-                        <a href="#" data-fancybox="gallery">
+                        <a href="img/product.png" data-fancybox="gallery">
                           <img src="img/product-gallery.png" alt="gallary">
                         </a>
                       </li>
                       <li>
-                        <a href="#" data-fancybox="gallery">
+                        <a href="img/product.png" data-fancybox="gallery">
                           <img src="img/product-gallery.png" alt="gallary">
                         </a>
                       </li>
@@ -137,27 +136,27 @@
                       <form action="#">
                           <div>
                               <input class="visually-hidden" type="checkbox" name="options[]" id="option-1" value="option-1">
-                              <label for="option-1">Хромированные детали<span></span><span>+250 ₽ </span></label>
+                              <label for="option-1">Хромированные детали<span></span><span>+250 <img src="img/rub-small.svg" alt="знак рубля"> </span></label>
                           </div>
                           <div>
                             <input class="visually-hidden" type="checkbox" name="options[]" id="option-2" value="option-2">
-                            <label for="option-2">Отделка сиденья кожей<span></span><span> +1000 ₽ </span></label>
+                            <label for="option-2">Отделка сиденья кожей<span></span><span> +1000 <img src="img/rub-small.svg" alt="знак рубля"> </span></label>
                         </div>
                         <div>
                             <input class="visually-hidden" type="checkbox" name="options[]" id="option-3" value="option-3">
-                            <label for="option-3">Селиконовые колеса<span></span><span>+800 ₽</span></label>
+                            <label for="option-3">Селиконовые колеса<span></span><span>+800 <img src="img/rub-small.svg" alt="знак рубля"></span></label>
                         </div>
                         <div>
                             <input class="visually-hidden" type="checkbox" name="options[]" id="option-4" value="option-4">
-                            <label for="option-4">Soft-touch пластик<span></span><span>+1500 ₽ </span></label>
+                            <label for="option-4">Soft-touch пластик<span></span><span>+1500 <img src="img/rub-small.svg" alt="знак рубля"> </span></label>
                         </div>
                         <div>
                             <input class="visually-hidden" type="checkbox" name="options[]" id="option-5" value="option-5">
-                            <label for="option-5">Лаковое покрытие<span></span><span>+800 ₽</span></label>
+                            <label for="option-5">Лаковое покрытие<span></span><span>+800 <img src="img/rub-small.svg" alt="знак рубля"></span></label>
                         </div>
                         <div>
                             <input class="visually-hidden" type="checkbox" name="options[]" id="option-6" value="option-6">
-                            <label for="option-6">Металические шипы<span></span><span>+1500 ₽ </span></label>
+                            <label for="option-6">Металические шипы<span></span><span>+1500 <img src="img/rub-small.svg" alt="знак рубля"> </span></label>
                         </div>
                         <div class="card__row">
                             <h3>Цвет:</h3>
@@ -471,7 +470,24 @@
          </div>
        </div>
      </footer> 
-   
+     <section class="popup" style="display:none">
+      <div class="popup__block ">
+        <h2 class="popup__header">Обрaтный звонок</h2>
+        <form class="popup__form" action="#" method="post">
+          <div class="popup__fields-wrapper">
+            <label class="visually-hidden" for="user-name">Ваше имя</label>
+            <input type="text" id="user-name" name="user-name" placeholder="Как к вам обращаться?" required>
+            <label class="visually-hidden" for="user-phone" >Ваш телефон</label>
+            <input type="text" id="user-phone" name="user-phone" placeholder="Ваш телефон" required>
+            <label class="visually-hidden" for="user-email" >Ваш email</label>
+          </div>
+          <input class="visually-hidden" type="checkbox" id="agree" name="agree" required>
+          <label class="popup__caption" for="agree">Отправляя обращение, вы даёте согласие на обработку <a href="#">персональных данных.</a></label>
+          <button class="popup__btn button button-gradient"><span>Отправить</span></button>
+        </form>
+        <button type="button" class="popup__close"><img src="img/close-icon.svg" alt="close"></button>
+      </div>
+    </section>
      <script src="js/vendor.js"></script>
      <script src="js/main.js"></script>
    
