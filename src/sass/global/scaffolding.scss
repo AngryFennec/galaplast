@@ -11,6 +11,11 @@
 
 a {
   font-family: inherit;
+  transition: 0.2s;
+  cursor: pointer;
+  &:hover {
+    transition: 0.2s;
+  }
 }
 
 .none {
