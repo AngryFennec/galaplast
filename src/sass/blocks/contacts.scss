@@ -34,6 +34,8 @@
     border-radius: 50%;
     width: 480px;
     height: 480px;
+    flex-shrink: 0;
+    overflow: hidden;
 
     & ymaps {
       border-radius: 50%;
