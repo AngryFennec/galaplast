@@ -133,15 +133,13 @@ font-feature-settings: 'pnum' on, 'lnum' on;
     }
   }
 
-  & .article__img {
-    margin-top: 20px;
-    margin-bottom: 70px;
-    & img {
+      & img {
+      margin-top: 20px;
+      margin-bottom: 70px;
       object-fit: cover;
       width: 100%;
       height: auto;
     }
-  }
 }
 
 .two-string {
@@ -171,6 +169,7 @@ font-feature-settings: 'pnum' on, 'lnum' on;
     max-height: 507px;
 
     & img {
+      margin: 0;
       object-fit: cover;
       width: 100%;
       height: auto;
@@ -215,6 +214,7 @@ font-feature-settings: 'pnum' on, 'lnum' on;
       top: 20px;
       padding-left: 10px;
       padding-right: 10px;
+
     }
     & .article__block-img {
       width: 100%;
