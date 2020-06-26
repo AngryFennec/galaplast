@@ -5,6 +5,7 @@
   & ul {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -12,6 +13,7 @@
 
   & li {
     margin-right: 5px;
+    display: flex;
 
     &:not(:first-of-type)::before {
       content: "/";
@@ -21,6 +23,20 @@
       font-size: 16px;
       line-height: 19px;
       color: #000000;
+    }
+
+    &:first-child a {
+      &::before {
+        content: "";
+        flex-shrink: 0;
+        width: 20px;
+        height: 8px;
+        margin-right: 5px;
+        background-image: url("../img/arrow-back.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
     }
   }
 
@@ -32,18 +48,7 @@
     color: #E06565;
     text-decoration: none;
     transition: opacity 0.2s;
-
-    &:first-of-type::before {
-      content: "";
-      flex-shrink: 0;
-      width: 20px;
-      height: 8px;
-      margin-right: 5px;
-      background-image: url("../img/arrow-back.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
-    }
+    padding-left: 3px;
 
     &:hover {
       opacity: 0.7;

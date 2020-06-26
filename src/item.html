@@ -87,6 +87,8 @@
           <li>
             <a href="#">Главная</a>
           </li>
+          <li><a href="#">Каталог товаров</a></li>
+          <li><a href="#">Стулья для детей</a></li>
           <li>
             <span>Доставка и оплата</span>
           </li>
@@ -223,30 +225,31 @@
                                 </li>
                             </ul>
                         </div>
+                        <div class="card__count">
+                          <div class="card__counter">
+                            <button type="button" class="card__btn card__btn--minus" aria-label="минус">
+                              <svg width="7" height="1" viewBox="0 0 7 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 1V0H7V1H0Z" fill="#A4A4A4"></path>
+                              </svg>
+                            </button>
+                            <input type="number" value="3" name="count-product" min = 0>
+                            <button type="button" class="card__btn card__btn--plus" aria-label="плюс">
+                              <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 2.89877V4.10123H4.209V7H2.791V4.10123H0V2.89877H2.791V0H4.209V2.89877H7Z" fill="#A4A4A4"></path>
+                              </svg>
+                            </button>
+                          </div>
+                          <button class="card__submit button-gradient">
+                            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M4.87086 7.61483L7.23299 4.41817C7.66021 3.8395 8.32477 3.5 9.03002 3.5H18.0943C18.7995 3.5 19.4641 3.8395 19.8913 4.41817L22.2535 7.61483C22.5541 8.02083 22.7168 8.519 22.7168 9.03V22.1667C22.7168 23.4558 21.7053 24.5 20.4564 24.5H6.66789C5.41901 24.5 4.40747 23.4558 4.40747 22.1667V9.03C4.40747 8.519 4.57022 8.022 4.87086 7.61483V7.61483Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M18.0839 11.6666C18.0839 14.2438 16.0597 16.3333 13.5631 16.3333C11.0664 16.3333 9.04224 14.2438 9.04224 11.6666" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M4.54248 8.24829H22.5806" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                              Добавить в корзину</button>
+                        </div>
                       </form>
                   </div>
-                  <div class="card__count">
-                    <div class="card__counter">
-                      <button type="button" class="card__btn card__btn--minus" aria-label="минус">
-                        <svg width="7" height="1" viewBox="0 0 7 1" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M0 1V0H7V1H0Z" fill="#A4A4A4"></path>
-                        </svg>
-                      </button>
-                      <input type="text" value="3" name="count-product">
-                      <button type="button" class="card__btn card__btn--plus" aria-label="плюс">
-                        <svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M7 2.89877V4.10123H4.209V7H2.791V4.10123H0V2.89877H2.791V0H4.209V2.89877H7Z" fill="#A4A4A4"></path>
-                        </svg>
-                      </button>
-                    </div>
-                    <button class="card__submit button-gradient">
-                      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4.87086 7.61483L7.23299 4.41817C7.66021 3.8395 8.32477 3.5 9.03002 3.5H18.0943C18.7995 3.5 19.4641 3.8395 19.8913 4.41817L22.2535 7.61483C22.5541 8.02083 22.7168 8.519 22.7168 9.03V22.1667C22.7168 23.4558 21.7053 24.5 20.4564 24.5H6.66789C5.41901 24.5 4.40747 23.4558 4.40747 22.1667V9.03C4.40747 8.519 4.57022 8.022 4.87086 7.61483V7.61483Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M18.0839 11.6666C18.0839 14.2438 16.0597 16.3333 13.5631 16.3333C11.0664 16.3333 9.04224 14.2438 9.04224 11.6666" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M4.54248 8.24829H22.5806" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                        Добавить в корзину</button>
-                  </div>
+
                   <h3>Xaрактеристики:</h3>
                   <ul>
                       <li>Высота: 154 см</li>

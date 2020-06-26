@@ -31,13 +31,13 @@
         justify-content: flex-start;
 
         & li {
-            width: 33.33%;
-            padding-right: 30px;
+            width: 32%;
+            margin-right: 2%;
             max-width: 380px;
             margin-bottom: 20px;
 
             &:nth-child(3n){
-                padding-right: 0;
+                margin-right: 0;
             }
         }
     }
@@ -112,11 +112,11 @@
             justify-content: space-around;
             & li {
                 width: 48%;
-                padding-right: 0;
+                margin-right: 0;
                 display: flex;
                 justify-content: center;
                 &:nth-child(3n){
-                    padding-right: 0;
+                    margin-right: 0;
                 }
 
             }
